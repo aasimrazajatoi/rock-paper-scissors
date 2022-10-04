@@ -21,6 +21,7 @@ pipeline {
 
         stage ('deploy') {
 	        steps {
+		     sh 'sudo chmod 664 ${WORKSPACE}/target/roshambo-1.0-SNAPSHOT.jar'
 		     sh	'java -jar ${WORKSPACE}/target/roshambo-1.0-SNAPSHOT' 	 
 		 }
          }
