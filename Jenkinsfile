@@ -1,27 +1,27 @@
 pipeline {
     agent any
     stages {   
-        stage ("Source") {
+        stage ('Source') {
             steps {
                 sh 'git clone https://github.com/aasimrazajatoi/rock-paper-scissors.git'                 
                 
             }
         
-        stage ("build") {
+        stage ('build') {
             steps {
                 sh 'mvn clean install'
             }
         }
 
-        stage ("test") {
+        stage ('test') {
             steps {
-                echo "testing"
+                echo 'testing'
             }
         }
 
-        stage ("deploy") {
+        stage ('deploy') {
 	        steps {
-		        echo "deploying"		 
+		        echo 'deploying'		 
 		 }
          }
    }
