@@ -21,7 +21,7 @@ pipeline {
 
         stage ('deploy') {
 	        steps {
-		     sh	'nohup java -jar ${WORKSPACE}/target/roshambo-1.0-SNAPSHOT' 	 
+		     sh	'java -jar ${WORKSPACE}/target/roshambo-1.0-SNAPSHOT' 	 
 		 }
          }
    }
