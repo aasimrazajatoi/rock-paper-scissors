@@ -6,7 +6,7 @@ pipeline {
                 sh 'git clone https://github.com/aasimrazajatoi/rock-paper-scissors.git'                 
                 
             }
-        
+        }
         stage ('build') {
             steps {
                 sh 'mvn clean install'
@@ -25,5 +25,4 @@ pipeline {
 		 }
          }
    }
-}
 }
