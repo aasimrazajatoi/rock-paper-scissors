@@ -3,7 +3,7 @@ pipeline {
     stages {   
         stage ("Source") {
             steps {
-                sh 'https://github.com/aasimrazajatoi/rock-paper-scissors.git'                 
+                sh 'git clone https://github.com/aasimrazajatoi/rock-paper-scissors.git'                 
                 
             }
         
